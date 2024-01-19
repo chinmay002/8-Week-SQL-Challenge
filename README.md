@@ -1,7 +1,7 @@
 # 8-Week-SQL-Challenge
 
-Want to see SQL magic in action? Check out my solutions for all 8 #8WeekSQLChallenge case studies! 
+<br>Want to see SQL magic in action? Check out my solutions for all 8 #8WeekSQLChallenge case studies! <br/>
 
-Learn from my approach to diverse data problems and delve into the world of powerful SQL queries. 
+<br>Learn from my approach to diverse data problems and delve into the world of powerful SQL queries. <br/>
 
-A huge shoutout to [Data with Danny](https://www.linkedin.com/company/datawithdanny/) for crafting these fantastic challenges! ✨
+<br>A huge shoutout to [Data with Danny](https://www.linkedin.com/company/datawithdanny/) for crafting these fantastic challenges! ✨ <br/>
