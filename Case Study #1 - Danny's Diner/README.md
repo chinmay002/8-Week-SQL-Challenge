@@ -13,6 +13,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 # Question and Solution
 **1. What is the total amount each customer spent at the restaurant?**
 
+~~~~sql
 SELECT
   	s.customer_id,
     sum(m.price)
@@ -21,13 +22,13 @@ join dannys_diner.menu m
 on s.product_id = m.product_id
 group by 1
 order by 1
-
-# steps :
+~~~~
+## steps :
 * **Calculates total spent per customer**: Joins sales and menu data based on product ID, then sums up prices for each customer.
 * **Groups and orders by customer**: Aggregates individual purchases into total spends per customer and arranges them alphabetically.
 * **Outputs customer IDs and total spend amounts**: Provides a table showing each customer's total expenditure at Danny's Diner.
 
-# Answer
+## Answer
 * Customer A spent $76.
 * Customer B spent $74.
 * Customer C spent $36.
