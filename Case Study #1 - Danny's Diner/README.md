@@ -1,4 +1,4 @@
-![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/aa9ab174-c5ed-4f7d-ac43-de63a5de9f43)
+
 # 🍜 Case Study #1: Danny's Diner
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/6e51e243-b24f-457c-8202-869c46823844)
 
@@ -32,7 +32,7 @@ order by 1
 * Customer A spent $76.
 * Customer B spent $74.
 * Customer C spent $36.
-
+---
 **2. How many days has each customer visited the restaurant?**
 
 ~~~~sql
