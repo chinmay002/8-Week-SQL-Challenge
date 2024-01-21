@@ -41,7 +41,7 @@ from dannys_diner.sales
 group by 1
 ~~~~
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/606ecac1-d696-4db2-8586-9d67b49c6528)
-
+---
 **3. What was the first item from the menu purchased by each customer?**
 ~~~~sql
 with cte as 
@@ -63,7 +63,7 @@ group by 1,2
 - The **WHERE** clause filters records to include only those with a rank of 1 (earliest order for each customer).
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/2fade4f4-962f-4659-8852-5305b051ad87)
-
+---
 **4. What is the most purchased item on the menu and how many times was it purchased by all customers?**
 ~~~~sql
 SELECT 
@@ -85,7 +85,7 @@ LIMIT 1;
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/7df85dbc-9eda-4817-ac2b-9b10e07e0235)
 
-
+---
 **5. Which item was the most popular for each customer?**
 ~~~~sql
 with cte2 as(
@@ -113,7 +113,7 @@ select cte2.customer_id,cte2.product_name from cte2
 
 ### Ramen Seems to be favorite dish for all customers.
 
-
+---
 **6. Which item was purchased first by the customer after they became a member?**
 
 ~~~~sql
@@ -141,7 +141,7 @@ select customer_id,product_name from cte where rnk=1
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/456f2f77-eebd-4fc4-a1c6-bd4f26e38d51)
 
-
+---
 **7. Which item was purchased just before the customer became a member?**
 
 ~~~~Sql
@@ -173,7 +173,7 @@ where rank = 1
 
   ### Maybe Sushi was the deciding dish for customer to take up the membership
 
-
+---
 **8. What is the total items and amount spent for each member before they became a member?**
 ~~~~Sql
 select  s.customer_id,count(product_name),sum(price) from dannys_diner.sales s 
@@ -187,7 +187,7 @@ group by 1
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/1b292aa0-f2a4-43da-b438-ac76e403e5df)
 
-
+---
 **9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier — how many points would each customer have?**
 
 ~~~~Sql
@@ -211,7 +211,7 @@ group by 1
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/191af38d-d937-49a1-a42e-319cf814d410)
 
-
+---
 # BONUS QUESTIONS
 
 **Join All The Things**
@@ -238,7 +238,7 @@ from cte
 
 ![image](https://github.com/chinmay002/8-Week-SQL-Challenge/assets/60249099/cecdfc6e-1de4-4ad7-bcba-2dd7c91a876e)
 
-
+---
 **Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.**
 
 ~~~~Sql
